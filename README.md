@@ -1,18 +1,18 @@
-# CIS4130_Tom_Duong
+**Overview:**
+An interest in games lies in many of us—including myself—but only a few have found significance in the data behind those games. I grew up playing Clash Royale, and encountering a large dataset from the game’s top players sparked a deep curiosity in me. As described on the Clash Royale Wiki, the game is “a fast-paced brawler where you collect cards and duel players in real time. Destroy your opponent's Crown Towers, but be sure to defend your own.” Each match features two players, each with a deck of eight character cards that can be deployed using a finite elixir resource.
 
-An interest in games lies in many of us, including myself, but only few have found significance in the data behind those games. I grew up playing the game Clash Royale, and seeing a big dataset from the top players sparked a fire in me. From Clash Royale Wiki, the game is “the fast-paced brawler where you collect cards and duel players in real time. Destroy your opponent's Crown Towers, but be sure to defend your own.” Each match includes 2 players, each possessing a deck of 8 character cards they can deploy for a certain amount of elixir.
+**Dataset:**
+The dataset I’m using is publicly available on Kaggle:
+https://www.kaggle.com/datasets/s1m0n38/clash-royale-games/data
 
-The dataset that I would be using could be assessed at https://www.kaggle.com/datasets/s1m0n38/clash-royale-games/data
+It consists of match statistics from top-ranked players spanning 15 seasons—from September 2022 to December 2023. Each row in the dataset represents a match and includes 23 columns, covering:
+Match Details: Date, game mode, and other contextual info
+Player Data (2 Players per Match):
+Unique IDs
+Trophy count before the match
+Number of crowns left (the target variable)
+8 cards used in the deck (represented as unit IDs)
 
-The dataset in question is statistics from matches of top players from September 2022 to December 2023 Each month represents one season of the game which adds up to 15 seasons of game data. This data set contains 23 columns which includes: information of when the match took place and game mode. It also contains information regarding 2 players  in each match (11 columns each): their unique ids, trophies before the match, the number of crowns left and their 8 specific cards on their deck. I intend on predicting the number of crowns left in matches based on the average elixir cost of each player’s deck using a supervised learning model.
-
-It involves:
-
-Data Setup & Environment Configuration (Appendix A): Setting up Python virtual environments, configuring Kaggle API access, and installing necessary utilities.
-
-Exploratory Data Analysis (EDA) (Appendix B): Performing EDA on multiple CSV files containing match data to assess structure, missing values, and unit usage distribution.
-
-External Data Integration & Cleaning (Appendix C): Enriching unit data by mapping numerical unit IDs to their names using data from an external JSON API.
-
-Machine Learning Pipeline with PySpark (Appendix D): Building a classification model (Logistic Regression) using Spark, with preprocessing steps like encoding, assembling features, training/testing split, and model evaluation using accuracy, precision, recall, and F1 score.
+**Objective:**
+The goal of this project is to predict the number of crowns left in a match using the average elixir cost of each player’s deck, employing supervised learning techniques.
 
