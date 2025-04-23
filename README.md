@@ -6,5 +6,13 @@ The dataset that I would be using could be assessed at https://www.kaggle.com/da
 
 The dataset in question is statistics from matches of top players from September 2022 to December 2023 Each month represents one season of the game which adds up to 15 seasons of game data. This data set contains 23 columns which includes: information of when the match took place and game mode. It also contains information regarding 2 players  in each match (11 columns each): their unique ids, trophies before the match, the number of crowns left and their 8 specific cards on their deck. I intend on predicting the number of crowns left in matches based on the average elixir cost of each player’s deck using a supervised learning model.
 
-This project look at the data of top Clash Royale players in order to build a prediction model for the number 
-of crowns that players might obtain given the units they have equipped
+It involves:
+
+Data Setup & Environment Configuration (Appendix A): Setting up Python virtual environments, configuring Kaggle API access, and installing necessary utilities.
+
+Exploratory Data Analysis (EDA) (Appendix B): Performing EDA on multiple CSV files containing match data to assess structure, missing values, and unit usage distribution.
+
+External Data Integration & Cleaning (Appendix C): Enriching unit data by mapping numerical unit IDs to their names using data from an external JSON API.
+
+Machine Learning Pipeline with PySpark (Appendix D): Building a classification model (Logistic Regression) using Spark, with preprocessing steps like encoding, assembling features, training/testing split, and model evaluation using accuracy, precision, recall, and F1 score.
+
