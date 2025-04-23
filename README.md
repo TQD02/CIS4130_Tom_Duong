@@ -1,13 +1,13 @@
 _**Overview:**_
 
-    An interest in games lies in many of us—including myself—but only a few have found significance in the data behind those games. I grew up playing Clash Royale, and encountering a large dataset from the game’s top players sparked a deep 
-    curiosity in me. As described on the Clash Royale Wiki, the game is “a fast-paced brawler where you collect cards and duel players in real time. Destroy your opponent's Crown Towers, but be sure to defend your own.” Each match features two 
-    players, each with a deck of eight character cards that can be deployed using a finite elixir resource.
+An interest in games lies in many of us—including myself—but only a few have found significance in the data behind those games. I grew up playing Clash Royale, and encountering a large dataset from the game’s top players sparked a deep 
+curiosity in me. As described on the Clash Royale Wiki, the game is “a fast-paced brawler where you collect cards and duel players in real time. Destroy your opponent's Crown Towers, but be sure to defend your own.” Each match features two 
+players, each with a deck of eight character cards that can be deployed using a finite elixir resource.
 
 _**Dataset:**_
 
-    The dataset I’m using is publicly available on Kaggle:
-    https://www.kaggle.com/datasets/s1m0n38/clash-royale-games/data
+The dataset I’m using is publicly available on Kaggle:
+https://www.kaggle.com/datasets/s1m0n38/clash-royale-games/data
 
 It consists of match statistics from top-ranked players spanning 15 seasons—from September 2022 to December 2023. Each row in the dataset represents a match and includes 23 columns, covering:
 Match Details: Date, game mode, and other contextual info
@@ -19,51 +19,51 @@ Number of crowns left (the target variable)
 
 _**Objective:**_
 
-    The goal of this project is to predict the number of crowns left in a match using the average elixir cost of each player’s deck, employing supervised learning techniques.
+The goal of this project is to predict the number of crowns left in a match using the average elixir cost of each player’s deck, employing supervised learning techniques.
 
 _**Project Pipeline:**_
 
 _1. Data Setup & Environment Configuration (Appendix A)_
 
-    Set up Python virtual environments
+- Set up Python virtual environments
 
-    Configure Kaggle API access
+- Configure Kaggle API access
 
-    Install all required libraries and utilities
+- Install all required libraries and utilities
 
 _2. Exploratory Data Analysis (EDA) (Appendix B)_
 
-    Perform EDA on multiple CSV files containing match data
+- Perform EDA on multiple CSV files containing match data
 
-    Assess structure, identify missing values
+- Assess structure, identify missing values
 
-    Analyze card (unit) usage distribution
+- Analyze card (unit) usage distribution
 
 _3. External Data Integration & Cleaning (Appendix C)_
 
-    Map unit IDs to actual card names using an external JSON API
+- Map unit IDs to actual card names using an external JSON API
 
-    Clean and preprocess data for further modeling
+- Clean and preprocess data for further modeling
 
 _4. Machine Learning Pipeline with PySpark (Appendix D)_
 
-    Use PySpark to construct a Logistic Regression model
+- Use PySpark to construct a Logistic Regression model
 
-     Apply preprocessing steps including:
+- Apply preprocessing steps including:
 
-         Feature encoding
+  + Feature encoding
 
-         Feature assembling
+  + Feature assembling
 
-         Training/testing data split
+  + Training/testing data split
 
-     Evaluate model performance using:
+- Evaluate model performance using:
 
-         Accuracy
+  + Accuracy
 
-         Precision
+  + Precision
 
-         Recall
+  + Recall
 
-         F1 Score
+  + F1 Score
 
