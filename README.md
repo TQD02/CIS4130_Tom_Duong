@@ -21,43 +21,43 @@ The goal of this project is to predict the number of crowns left in a match usin
 
 _**Project Pipeline:**_
 
-1. Data Setup & Environment Configuration (Appendix A)
-Set up Python virtual environments
+_1. Data Setup & Environment Configuration (Appendix A)_
+    Set up Python virtual environments
 
-Configure Kaggle API access
+    Configure Kaggle API access
 
-Install all required libraries and utilities
+    Install all required libraries and utilities
 
-2. Exploratory Data Analysis (EDA) (Appendix B)
-Perform EDA on multiple CSV files containing match data
+_2. Exploratory Data Analysis (EDA) (Appendix B)_
+    Perform EDA on multiple CSV files containing match data
 
-Assess structure, identify missing values
+    Assess structure, identify missing values
 
-Analyze card (unit) usage distribution
+    Analyze card (unit) usage distribution
 
-3. External Data Integration & Cleaning (Appendix C)
-Map unit IDs to actual card names using an external JSON API
+_3. External Data Integration & Cleaning (Appendix C)_
+    Map unit IDs to actual card names using an external JSON API
 
-Clean and preprocess data for further modeling
+    Clean and preprocess data for further modeling
 
-4. Machine Learning Pipeline with PySpark (Appendix D)
-Use PySpark to construct a Logistic Regression model
+_4. Machine Learning Pipeline with PySpark (Appendix D)_
+    Use PySpark to construct a Logistic Regression model
 
-Apply preprocessing steps including:
+     Apply preprocessing steps including:
 
-Feature encoding
+         Feature encoding
 
-Feature assembling
+         Feature assembling
 
-Training/testing data split
+         Training/testing data split
 
-Evaluate model performance using:
+     Evaluate model performance using:
 
-Accuracy
+         Accuracy
 
-Precision
+         Precision
 
-Recall
+         Recall
 
-F1 Score
+         F1 Score
 
