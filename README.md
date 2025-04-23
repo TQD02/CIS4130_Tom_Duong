@@ -1,6 +1,8 @@
 _**Overview:**_
 
-An interest in games lies in many of us—including myself—but only a few have found significance in the data behind those games. I grew up playing Clash Royale, and encountering a large dataset from the game’s top players sparked a deep curiosity in me. As described on the Clash Royale Wiki, the game is “a fast-paced brawler where you collect cards and duel players in real time. Destroy your opponent's Crown Towers, but be sure to defend your own.” Each match features two players, each with a deck of eight character cards that can be deployed using a finite elixir resource.
+ An interest in games lies in many of us—including myself—but only a few have found significance in the data behind those games. I grew up playing Clash Royale, and encountering a large dataset from the game’s top players sparked a deep 
+ curiosity in me. As described on the Clash Royale Wiki, the game is “a fast-paced brawler where you collect cards and duel players in real time. Destroy your opponent's Crown Towers, but be sure to defend your own.” Each match features two 
+ players, each with a deck of eight character cards that can be deployed using a finite elixir resource.
 
 _**Dataset:**_
 
