@@ -25,7 +25,7 @@ _**Project Pipeline:**_
 
 _1. Data Setup & Environment Configuration (Appendix A)_
 
-- Set up Python virtual environments
+- Set up Python virtual environments using Google Cloud Platform
 
 - Configure Kaggle API access
 
